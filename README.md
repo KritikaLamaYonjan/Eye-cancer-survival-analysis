@@ -1,41 +1,83 @@
-Biology or Budget:What drives Eve Cancer Survival
+# Biology or Budget: What Drives Eye Cancer Survival?
 
-This project is a Streamlit-based interactive dashboard.
+## Project Overview
 
-To run the application on your local machine, follow the instructions provided below.
+This project is a **Streamlit-based interactive dashboard** that explores the relationship between clinical, genetic, and macro-economic factors and eye cancer survival.
 
-Prerequisites:
+The dashboard allows users to interactively analyze patient survival patterns based on:
 
-1.Before running the dashboard, ensure that you have Python installed on your system. You will also need the following Python libraries:
-streamlit, pandas, plotly, numpy
+- Economic spending levels
+- Cancer stage at diagnosis
+- Genetic markers
+- Age
+- GDP expenditure
+- Survival time
+- Genetic testing status
 
-2.Required Files:
-Ensure that the following files are located in the same directory:
+## Project Objectives
 
-A.Dashboard.py (The main Streamlit script)
-B.Eye_Cancer_Merged_data_set.csv (The dataset used for the visualizations)
+The main objectives of this project are to:
 
-Installation Steps:
+- Analyze eye cancer survival trends over time.
+- Investigate the relationship between cancer stage and survival.
+- Examine the impact of genetic markers on survival.
+- Analyze differences in diagnostic testing across economic tiers.
+- Explore the relationship between age, national spending, and survival.
+- Identify correlations between clinical, genetic, and economic variables.
 
-1.Open your terminal or command prompt and navigate to the folder containing the project files.
+## Dashboard Visualizations
 
-2.Install the necessary dependencies by typing the following command:
-pip install streamlit pandas plotly numpy
+The dashboard contains six interactive visualizations:
 
-Execution:
+### 1. 5-Year Survival Trends
+Shows average survival time across different economic spending tiers from 2019 to 2023.
 
-Once the libraries are installed, you can launch the dashboard by running the following command in your terminal:
+### 2. Survival Distribution by Stage
+Compares the distribution of survival time across cancer stages and economic tiers.
 
-streamlit run Dashboard.py
+### 3. Diagnostic Gap Analysis
+Shows the difference in genetic testing status across economic spending tiers.
 
-Dashboard Usage:
+### 4. Mean Survival: Genetic Impact
+Compares average survival between patients with BRAF mutations and those who were not tested.
 
-After running the command, a new tab will open in your default web browser displaying the dashboard. You can use the controls located in the sidebar on the left side of the screen to filter the data. These filters include:
+### 5. Age & National Spending Interaction
+Explores the relationship between patient age, survival time, and GDP expenditure.
 
-1.Timeline: Use the slider to select a specific range of years (2019–2023).
+### 6. Statistical Correlation Matrix
+Shows correlations between survival time, GDP expenditure, cancer stage, age, and genetic profile.
 
-2.Economic Tier: Choose one or multiple economic categories (e.g., High-Spending, Mid-Spending, Low-Spending).
+## Technologies Used
 
-3.Genetic Profile: Filter data based on genetic markers (e.g., BRAF Mutation, Not Tested).
+- Python
+- Pandas
+- NumPy
+- Plotly
+- Streamlit
+- Jupyter Notebook
 
-The KPIs and all six visualizations will update automatically based on your selections. The layout is optimized to display all charts clearly in a structured grid without unnecessary scrolling.
+## Project Files
+
+| File | Description |
+|---|---|
+| `Dashboard.py` | Main Streamlit dashboard application |
+| `evecancercode.ipynb` | Jupyter Notebook containing data analysis and exploration |
+| `Eye_Cancer_Merged_data_set.csv` | Merged dataset used for the dashboard |
+| `eye_cancer_patients.csv` | Eye cancer patient dataset |
+| `GDP_indicator.csv` | GDP expenditure indicator data |
+| `aggregated_survival_summary.csv` | Aggregated survival analysis data |
+| `Task3_Exploratory_Visuals.png` | Exploratory data visualizations |
+| `requirements.txt` | Python libraries required to run the project |
+
+## Installation
+
+### 1. Install Python
+
+Make sure Python is installed on your computer.
+
+### 2. Clone the Repository
+
+Clone this repository to your local computer:
+
+```bash
+git clone https://github.com/KritikaLamaYonjan/Eye-cancer-survival-analysis.git
